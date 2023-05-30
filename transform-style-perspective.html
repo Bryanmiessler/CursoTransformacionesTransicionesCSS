@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      margin: 8rem;
+      width: 200px;
+      height: 200px;
+    }
+
+    .container{
+      display: grid;
+      place-content: center;
+      position: absolute;
+      background-color: grey;
+      border: 1px solid transparent;
+      /* Perspectiva */
+      perspective: 100px;
+    }
+    
+    /* Elemento hijo */
+    .transform3D{
+      border: 1px solid black;
+      background-color: skyblue;
+      font-size: 2rem;
+      display: grid;
+      place-content: center;
+      cursor: pointer;
+    
+      /*Transform-style*/
+      transform-style: preserve-3d;
+    
+    }
+    
+    /* Transformaciones */
+    .transform3D:hover {
+      transform: rotateX(15deg)
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="transform3D">Señálame</div>
+  </div>
+</body>
+</html>
